@@ -143,7 +143,7 @@ the website, in dark theme
   background-color: var(--first-color-dark);
 }
 
-.dark-theme .product__circle,
+.dark-theme .project__circle,
 .dark-theme .footer__subscribe{
   background-color: var(--container-color);
 }
@@ -486,23 +486,23 @@ the website, in dark theme
     transform: translateY(-.25rem);
   }
 
-  /*=============== PRODUCTS ===============*/
-.product__description{
+  /*=============== PROJECTS ===============*/
+.project__description{
     text-align: center;
   }
   
-  .product__container{
+  .project__container{
     padding: 3rem 0;
     grid-template-columns: repeat(2, 1fr);
     gap: 2.5rem 3rem;
   }
   
-  .product__card{
+  .project__card{
     display: grid;
     position: relative;
   }
   
-  .product__img{
+  .project__img{
     position: relative;
     width: 120px;
     justify-self: center;
@@ -510,18 +510,18 @@ the website, in dark theme
     transition: .3s;
   }
   
-  .product__title,
-  .product__price{
+  .project__title,
+  .project__price{
     font-size: var(--small-font-size);
     font-weight: var(--font-semi-bold);
     color: var(--title-color);
   }
   
-  .product__title{
+  .project__title{
     margin-bottom: .25rem;
   }
   
-  .product__button{
+  .project__button{
     position: absolute;
     right: 0;
     bottom: 0;
@@ -532,21 +532,11 @@ the website, in dark theme
     font-size: 1.15rem;
   }
   
-  .product__button:hover{
+  .project__button:hover{
     background-color: var(--first-color-alt);
   }
   
-  .product__circle{
-    width: 90px;
-    height: 90px;
-    background-color: var(--first-color-lighten);
-    border-radius: 50%;
-    position: absolute;
-    top: 18%;
-    left: 5%;
-  }
-  
-  .product__card:hover .product__img{
+  .project__card:hover .project__img{
     transform: translateY(-.5rem);
   }
   
@@ -871,7 +861,7 @@ the website, in dark theme
       padding: 1.5rem;
     }
   
-    .product__container{
+    .project__container{
       grid-template-columns: .6fr;
       justify-content: center;
     }
@@ -883,10 +873,10 @@ the website, in dark theme
       grid-template-columns: repeat(2, 1fr);
     }
   
-    .product__description{
+    .project__description{
       padding: 0 4rem;
     }
-    .product__container{
+    .project__container{
       grid-template-columns: repeat(2, 170px);
       justify-content: center;
       column-gap: 5rem;
@@ -991,23 +981,23 @@ the website, in dark theme
       font-size: var(--normal-font-size);
     }
   
-    .product__description{
+    .project__description{
       padding: 0 16rem;
     }
-    .product__container{
+    .project__container{
       padding: 4rem 0;
       grid-template-columns: repeat(3, 185px);
       gap: 4rem 6rem;
     }
-    .product__img{
+    .project__img{
       width: 160px;
     }
-    .product__circle{
+    .project__circle{
       width: 110px;
       height: 110px;
     }
-    .product__title,
-    .product__price{
+    .project__title,
+    .project__price{
       font-size: var(--normal-font-size);
     }
   
