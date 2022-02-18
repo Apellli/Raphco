@@ -654,7 +654,7 @@ the website, in dark theme
   
   .contact__content{
     position: relative;
-    height: 3rem;
+    height: 2.5rem;
     border-bottom: 1px solid var(--text-color-light);
   }
   

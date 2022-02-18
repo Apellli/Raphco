@@ -7,7 +7,7 @@ const assets = [
   '/assets/js/scrollreveal.min.js',
   '/assets/css/styles.css',
   '/assets/img/logo-72x72.png',
-  'https://fonts.googleapis.com/css?family=poppins:300,400,700',
+  'https://fonts.googleapis.com/css?family=poppins:400,500,600,700',
   'https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css',
 ];
 // install event

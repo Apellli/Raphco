@@ -432,20 +432,25 @@
                         </div>
                     </div>
 
-                    <form action="" class="contact__form" onsubmit="sendEmail(); reset(); return false;">
+                    <form action="https://formsubmit.co/kingalosa33@email.com" method="POST" class="contact__form"">
                         <div class="contact__inputs">
+                            <div class="contact__content" style="margin-top: 1rem;">
+                                <input type="text" class="contact__input" required>
+                                <label for="" class="contact__label" id="name">Name</label>
+                            </div>
+
                             <div class="contact__content">
-                                <input type="email" placeholder=" " class="contact__input">
+                                <input type="number"class="contact__input" required>
+                                <label for="" class="contact__label" id="tel">Phone Number</label>
+                            </div>
+
+                            <div class="contact__content">
+                                <input type="email" class="contact__input" required>
                                 <label for="" class="contact__label" id="email">Email</label>
                             </div>
 
-                            <div class="contact__content">
-                                <input type="text" placeholder=" " class="contact__input">
-                                <label for="" class="contact__label" id="subject">Subject</label>
-                            </div>
-
                             <div class="contact__content contact__area">
-                                <textarea name="message" placeholder=" " class="contact__input"></textarea>                              
+                                <textarea name="message" class="contact__input"></textarea>                              
                                 <label for="" class="contact__label" id="message">Message</label>
                             </div>
                         </div>
@@ -533,23 +538,7 @@
         <script src="assets/js/scrollreveal.min.js"></script>
 
          <!--=============== SEND EMAIL ===============-->
-         <script src="https://smtpjs.com/v3/smtp.js"></script>
-         <script>
-              function sendEmail() 
-              {
-                Email.send({
-                Host : "smtp.gmail.com",
-                Username : "kingalosa33@gmail.com",
-                Password : "crown3960",
-                To : 'kingalosa33@gmail.com',
-                From : document.getElementById("email").value,
-                Subject : document.getElementById("subject").value,
-                Body : document.getElementById("message").value,
-            }).then(
-            message => alert(message)
-);
-              }
-         </script>
+         
         
         <!--=============== MAIN JS ===============-->
         <script src="assets/js/main.js"></script>
