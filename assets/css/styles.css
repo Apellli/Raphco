@@ -45,6 +45,12 @@
   /*========== z index ==========*/
   --z-tooltip: 10;
   --z-fixed: 100;
+
+   /*========== Hover overlay ==========*/
+   --img-transition: .3s;
+   --img-hidden: hidden;
+   --img-scale: scale(1.1);
+
 }
 
 /* Responsive typography */
@@ -407,11 +413,46 @@ the website, in dark theme
   /*=============== ABOUT ===============*/
 .about__container{
     row-gap: 2rem;
+    
   }
   
-  .about__img{
+  /* .about__img{
     width: 280px;
     justify-self: center;
+  } */
+   .about__img {
+    position: relative;
+    padding-bottom: 1rem;
+    grid-template-columns: 0.75fr;
+  
+  }
+  
+  .about__img-one, 
+  .about__img-two {
+    transition: var(--img-transition);
+  }
+  
+  .about__img-one:hover, 
+  .about__img-two:hover {
+    transform: var(--img-scale);
+  }
+  
+  .about__overlay {
+    overflow: var(--img-hidden);
+  }
+  
+  .about__overlay:nth-child(1) {
+    width: 340px;
+    margin-left: 0;
+    justify-self: center;
+  }
+  
+  .about__overlay:nth-child(2) {
+    width: 230px;
+    position: absolute;
+    top: 10rem;
+    right: 0;
+    border-radius: .25rem;
   }
   
   .about__title{
@@ -915,6 +956,9 @@ the website, in dark theme
     .footer__container{
       grid-template-columns: repeat(2, 1fr);
     }
+    /* .about__container{
+      grid-template-columns: 1.75fr 1fr;
+    } */
     
     .home{
       padding: 10rem 0 5rem;
@@ -968,7 +1012,7 @@ the website, in dark theme
     }
   
     .about__img{
-      width: 380px;
+      width: 460px;
     }
   
     .steps__container{
