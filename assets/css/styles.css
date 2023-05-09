@@ -422,14 +422,21 @@ the website, in dark theme
   } */
    .about__img {
     position: relative;
-    padding-bottom: 1rem;
-    grid-template-columns: 0.75fr;
+    padding-bottom: 2rem;
   
+  }
+.about__hero{
+  padding-bottom: 1rem;
+}
+  .about__img-intro{
+   width: 100%;
   }
   
   .about__img-one, 
   .about__img-two {
     transition: var(--img-transition);
+    object-position: center;
+    object-fit: cover;
   }
   
   .about__img-one:hover, 
@@ -439,21 +446,22 @@ the website, in dark theme
   
   .about__overlay {
     overflow: var(--img-hidden);
+    grid-template-columns:  repeat(2, 1fr);
+    gap: 1rem;
   }
-  
-  .about__overlay:nth-child(1) {
-    width: 320px;
-    margin-left: 0;
-    justify-self: center;
+  .about__img-intro{
+    border-radius: 1rem;
   }
-  
-  .about__overlay:nth-child(2) {
-    width: 230px;
-    position: absolute;
-    top: 10rem;
-    right: 0;
-    border-radius: .25rem;
+   .about__img-one {
+    width: 220px;
+    border-radius: .5rem;
+    
   }
+
+  .about__img-two {
+    width: 210px;
+    border-radius: .5rem;
+  } 
   
   .about__title{
     margin-bottom: var(--mb-1);
@@ -655,7 +663,7 @@ the website, in dark theme
   }
   
   .accordion-open .questions__icon{
-    transform: rotate(45deg);
+    transform: rotate(180deg);
   }
   
   /*=============== CONTACT ===============*/
@@ -894,13 +902,11 @@ the website, in dark theme
     .home__title{
       font-size: var(--h1-font-size);
     }
-    .about__overlay:nth-child(1) {
-      width: 240px;
+    .about__img-one,
+    .about__img-two {
+      width: auto;
     }
-    .about__overlay:nth-child(2) {
-      width: 180px;
-    }
-  
+    
     .steps__bg{
       padding: 2rem 1rem;
     }
@@ -1018,7 +1024,7 @@ the website, in dark theme
     }
   
     .about__img{
-      width: 460px;
+      width: 480px;
     }
   
     .steps__container{
@@ -1095,7 +1101,7 @@ the website, in dark theme
     }
   
     .about__container{
-      column-gap: 7rem;
+      column-gap: 6rem;
     }
   
     .scrollup{
