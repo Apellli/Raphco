@@ -432,13 +432,15 @@ the website, in dark theme
    width: 100%;
   }
   
+  .about__img-intro,
   .about__img-one, 
   .about__img-two {
     transition: var(--img-transition);
     object-position: center;
     object-fit: cover;
   }
-  
+
+  .about__img-intro:hover,
   .about__img-one:hover, 
   .about__img-two:hover {
     transform: var(--img-scale);
