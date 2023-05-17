@@ -175,7 +175,7 @@ the website, in dark theme
 }
 
 .container{
-  max-width: 968px;
+  max-width: 1024px;
   margin-left: var(--mb-1-5);
   margin-right: var(--mb-1-5);
 }
@@ -1022,7 +1022,7 @@ the website, in dark theme
       width: 350px;
     }
     .home__description{
-      padding-right: 7rem;
+      padding-right: 4rem;
     }
   
     .about__img{
@@ -1048,7 +1048,7 @@ the website, in dark theme
       gap: 4rem 6rem;
     }
     .project__img{
-      width: 160px;
+      width: 180px;
     }
     .project__circle{
       width: 110px;
